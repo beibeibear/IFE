@@ -16,15 +16,15 @@ header{
 	background: rgba(0, 0, 0, .6);
 }
 header h1{
+	display: inline-block;
 	margin-left: 20px;
 	font-size: 30px;
 	line-height: 50px;
 	color: #fff;
 }
 header ul{
-	position: absolute;
-	right: 0;
-	top: 17px;
+	float: right;
+	line-height: 50px;
 }
 header li{
 	float: left;
@@ -45,6 +45,7 @@ article,aside,.image{
 	padding: 30px 20px;
 	background: #fff;
 	box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, .3);
+	/* border-style: outset; */
 }
 article h4{
 	margin: 15px 0;
@@ -78,15 +79,14 @@ article ol{
 article table{
 	width: 100%;
 	border-collapse: collapse;
-	border: solid #999;
-	border-width: 1px 0 0 1px;
 }
 article th,td{
 	padding: 5px;
 	font-size: 14px;
 	text-align: left;
-	border: solid #999;
-	border-width: 0 1px 1px 0;
+}
+table, th, td {
+    border: 1px solid #ccc;
 }
 .table-head{
 	color: #fff;
