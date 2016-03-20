@@ -7,10 +7,11 @@ body{
     margin:20px;
     background: #eee;
     border:1px solid #999;
-    height: 700px;
     padding-top: 20px;
     padding-left:240px;
     padding-right: 165px;
+    padding-bottom: 20px;
+    height:433px;
 }
 .left{
     width:162px;
