@@ -40,8 +40,9 @@ body{
     left:30px;
 }
 .main{
-    width: 100%;
+    width: 98%;
     height:200px;
+    padding: 1%;
 }
 .right{
     width: 82px;
