@@ -18,7 +18,7 @@ body{
 }*/
 /*方法二*/
 .box{
-	position: absolute;或fixed
+	position: absolute;/*或fixed*/
 	top:0;
 	right:0;
 	bottom:0;
