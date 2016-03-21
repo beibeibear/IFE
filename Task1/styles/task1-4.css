@@ -9,22 +9,22 @@ body{
 	position: relative;
 }
 /*方法一*/
-.box{
-	position:absolute;/*或fixed*/
+/*.box{
+	position:absolute;或fixed
 	top:50%;
 	left:50%;
 	margin-top:-100px;
 	margin-left:-200px;
-}
+}*/
 /*方法二*/
-/*.box{
-	position: absolute;或fixed
+.box{
+	position: absolute;/*或fixed*/
 	top:0;
 	right:0;
 	bottom:0;
 	left:0;
 	margin: auto;
-}*/
+}
 /*方法三(移动端)*/
 /*.box{
 	position: absolute;
