@@ -1,0 +1,125 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	background: #999;
+}
+@mixin font($family,$weight,$size,$color,$line-height: 16px){
+	font-family: $family;
+	font-weight: $weight;
+	font-size: $size;
+	color: $color;
+	line-height: $line-height;
+}
+@mixin pos($position,$z-index: 0){
+	position: $position;
+	z-index: $z-index;
+}
+@mixin size($width,$height){
+	width: $width;
+	height: $height;
+}
+.warp{
+	margin: 100px auto;
+	padding: 0 44px;
+	max-width: 892px;
+	max-height: 1386px;
+	background: #fff;
+}
+.header{
+	@include pos(relative);
+	.header-title{
+		@include pos(relative);
+		@include font(simHei,400,12px,#fff);
+		display: inline-block;
+		vertical-align: bottom;
+		width: 110px;
+		height: 61px;
+		background: #d45d5c;
+		span{
+			@include pos(absolute);
+			left: 5px;
+			bottom: 5px;
+		}
+	}
+	.header-time{
+		@include font(simHei,400,12px,#d45d5c);	
+		@include pos(absolute);
+		right: 0;
+		bottom: 0;
+	}
+}
+$main-border: solid #938e8c;
+.main{
+	padding: 30px 0;
+	border-top: 2px $main-border;
+	border-bottom: 1px $main-border;
+}
+.banner{
+	margin-bottom: 30px;
+	&:after{
+		content: "";
+		height: 0;
+		display: block;
+		visibility: none;
+		clear: both;
+	}
+	.banner-left{
+		@include pos(relative);
+		float: left;
+		@include size(641px,301px);
+		img{
+			width: 641px;
+			height: 301px;
+		}
+		.banner-mask-green,.banner-mask-red{
+			@include size(191px,301px);	
+		}
+		.banner-mask-green{
+			@include pos(absolute,1);
+			top: 0;
+			left: 0;		
+			background: rgba(66, 141, 89, .5);
+		}
+		.banner-mask-red{
+			@include pos(absolute,1);
+			top: 0;
+			right: 0;
+			background: rgba(204, 118, 128, .5);
+		}
+	}
+	.banner-right{
+		@include size(203px,301px);
+		float: right;
+		padding-top: 10px;
+		border-top: 2px solid #cc8091;
+		h4{
+			@include font("Microsoft YaHei",400,24px,#000,40px);
+			font-variant:small-caps;
+			text-decoration: underline;
+		}
+		p{
+			@include font(KaiTi,400,12px,#676767,10px);
+			margin-bottom: 50px;
+		}
+		>span{
+			@include font("Microsoft YaHei",400,116px,#75b86b,40px);
+			text-decoration: underline;
+			font-style: oblique;
+		}
+	}
+}
+
+.bottom-left{
+	img{
+		width: 166px;
+		height: 286px;
+	}
+}
+.bottom-right-banner{
+	img{
+		width: 458px;
+		height: 275px;
+	}
+}
