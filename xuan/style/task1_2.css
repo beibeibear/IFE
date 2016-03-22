@@ -35,7 +35,6 @@ ul {
 
 nav ul {
     display: inline-block;
-    margin: 0;
     padding: 0;
 }
 
@@ -61,7 +60,6 @@ nav a:hover {
 }
 
 article, section, aside {
-    /*内部元素的margin会影响外部元素*/
     margin: 0 0 15px;
     padding: 30px 20px;
     border-style: outset;
