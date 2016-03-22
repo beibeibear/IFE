@@ -82,8 +82,8 @@ blockquote{
 	float: left;
 	margin-left:20px;
 }
-.right{
-	text-align: right;
+.left{
+	text-align: left;
 }
 .form{
 	width:98%;
