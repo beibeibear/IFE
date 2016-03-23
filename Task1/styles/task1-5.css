@@ -1,25 +1,19 @@
 body{
 	background: #DEDEDE;
+	margin: 0;
+	padding: 0;
 }
 nav{
 	background: #333;
 	width:100%;
 	height: 80px;
 	border-bottom:2px solid #D6DFEA;
-	position: fixed;
-	top:0px;
-	left: 0px;
 }
-<<<<<<< HEAD
-nav ul li{
-	float: right;
-=======
 nav ul{
 	float: right;
 }
 nav ul li{
 	float: left;
->>>>>>> 14471c2d18327026245e68de70daf020fac01bf2
 	margin-left:20px;
 	line-height: 40px;
 }
@@ -39,16 +33,16 @@ nav ul li a{
 }
 article,.image,aside{	
 	margin:20px 20px 20px;
-<<<<<<< HEAD
-=======
 	padding: 20px;
->>>>>>> 14471c2d18327026245e68de70daf020fac01bf2
 	border:1px solid #CDCDCD;
 	box-shadow: 1px 2px 2px 1px #848484;
 	background: white;
 }
+article,.image{
+	margin-right:384px;
+}
 #article{
-	margin-top: 100px;
+	margin-top: 20px;
 }
 #link{
 	color:#8B8B8B;
@@ -75,9 +69,12 @@ thead{
 tfoot{
 	background: #CCC;
 }
-.aside{
-	width: 100%;
-	height:60px;
+aside{
+	width: 300px;
+	padding: 30px 20px;
+	position: absolute;
+	top: 80px;
+	right: 0px;
 }
 blockquote{
 	line-height: 4px;
@@ -86,12 +83,11 @@ blockquote{
 	float: left;
 	margin-left:20px;
 }
-.right{
+.left{
 	text-align: right;
+	width: 120px;
 }
 .form{
-	width:98%;
-	margin:0px 1% 20px 1%;
 	margin-bottom:20px;
 }
 .form td{
@@ -101,14 +97,25 @@ textarea{
 	width: 60%;
 	height:100px;
 	font-size: 1.5em;
-<<<<<<< HEAD
-	font-family: 
-}
-.introduction{
-	text-indent: 9px;
-=======
 	vertical-align: top; 
->>>>>>> 14471c2d18327026245e68de70daf020fac01bf2
+}
+.image{
+	padding: 20px;
+
+}
+figcaption{
+	line-height: 40px;
+}
+figure{
+	padding:0px 20px 20px 20px;
+	float: left;
+	text-align: center;
+	border:1px solid #ccc;
+}
+.image:after{
+	content: " ";
+    display: block;
+    clear: both;
 }
 .warning{
 	color:#9A9A9A;
@@ -122,10 +129,7 @@ button{
 	border-radius: 5px;
 }
 footer{
-<<<<<<< HEAD
-=======
 	width: 100%;
->>>>>>> 14471c2d18327026245e68de70daf020fac01bf2
 	background: #000;
 	color:#fff;
 	height:70px;
